@@ -1,0 +1,66 @@
+1. API PATH: http://localhost:8080/api/v1/messages			
+	Method: POST
+	Query Param: NA
+	Request Body: {
+	  "userId": "sampleId1",
+	  "timestamp": 1557575558,
+	  "type": "MESSAGE",
+	  "direction": "INCOMING",
+	  "content": "Sample Message 1"
+	}
+	Response: messageId
+	
+	
+	
+2. API PATH: http://localhost:8080/api/v1/messages			
+	Method: POST
+	Query Param: NA
+	Request Body: {
+	  "userId": "sampleId1",
+	  "timestamp": 1557575568,
+	  "type": "MESSAGE",
+	  "direction": "OUTGOING",
+	  "content": "Sample Message 2"
+	}
+	Response: messageId	
+	
+
+3. API PATH: http://localhost:8080/api/v1/messages			
+	Method: POST
+	Query Param: NA
+	Request Body: {
+	  "userId": "sampleId1",
+	  "timestamp": 1557575768,
+	  "type": "MESSAGE",
+	  "direction": "OUTGOING",
+	  "content": "Sample Message 3"
+	}
+	Response: messageId		
+	
+	
+4. API PATH: http://localhost:8080/api/v1/messages			
+	Method: POST
+	Query Param: NA
+	Request Body: {
+	  "userId": "sampleId2",
+	  "timestamp": 1557575559,
+	  "type": "MESSAGE",
+	  "direction": "INCOMING",
+	  "content": "Sample Message 4"
+	}
+	Response: messageId
+	
+	
+	
+5. API PATH: http://localhost:8080/api/v1/messages			
+	Method: POST
+	Query Param: NA
+	Request Body: {
+	  "userId": "sampleId2",
+	  "timestamp": 1557575868,
+	  "type": "MESSAGE",
+	  "direction": "OUTGOING",
+	  "content": "Sample Message 5"
+	}
+	Response: messageId	
+	

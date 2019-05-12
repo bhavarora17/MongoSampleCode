@@ -1,0 +1,56 @@
+REST API Details:
+
+1. API to post a new message
+API PATH: http://localhost:8080/api/v1/messages			
+Method: POST
+Query Param: NA
+Request Body: {
+  "userId": "sample",
+  "timestamp": 1557575558,
+  "type": "MESSAGE",
+  "direction": "INCOMING",
+  "content": "Sample Message"
+}
+Response: messageId
+
+
+2. API to get messages of a user
+API PATH: http://localhost:8080/api/v1/messages
+Method: GET
+Query Param: userId
+Request Body: NA
+Response: JSON Array of message
+
+
+
+3. API to update message by messageId
+API PATH: http://localhost:8080/api/v1/messages
+Method:PUT
+Query Param: messageId
+Request Body: {
+  "userId": "sample",
+  "timestamp": 1557575558,
+  "type": "MESSAGE",
+  "direction": "INCOMING",
+  "content": "Sample Message"
+}
+Response: 200 OK Http Response
+
+
+
+4. API to delete all messages of a user
+API PATH: http://localhost:8080/api/v1/messages
+Method: DELETE
+Query Param: userId
+Request Body: NA
+Response: 200 OK Http Response
+
+
+5. API to delete multiple messages of a user, providing number
+API PATH: http://localhost:8080/api/v1/messages/multi
+Method: DELETE
+Query Param: userId, number
+Request Body: NA
+Response: 200 OK Http Response
+
+
